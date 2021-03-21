@@ -8,10 +8,17 @@
     </head> 
     <body>
        <h1>Web Calculator Project</h1>
-        <form onsubmit="addNumbers()">
-            number1 = <input type="text" id="number1" name="number1" value=""/>
-            number2 = <input type="text" id="number2" name="number2" value=""/>
-            <input type="submit"/> 
+        <form onclick="total()">
+            Number1 <input type="text" id="number1" name="number1" value=""/>
+            <label for="operator">Operator</label>
+            <select id="operator" name="operator">
+                <option value="Add">Add</option>
+                <option value="Subtract">Subtract</option>
+                <option value="Multiply">Multiply</option>
+                <option value="Divide">Divide</option>
+            </select>
+            Number2 <input type="text" id="number2" name="number2" value=""/>
+            <input type="submit"/>
         </form>
     </body>
 </html>
